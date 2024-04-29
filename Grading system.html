@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: indigo;">
+    <div class="container" style="height: 60vh; width:50%; background-color:azure; margin-left: 250px; border-radius: 50px;">
+    <h1 style="text-align: center;">Grading system</h1>
+    <input type="text" placeholder="enter your score..." style="height: 7vh; width: 70%; margin-left: 90px; margin-top: 20px;" id="scoreinput">
+    <button style="background-color: black; color: white; padding: 14px; width: 40%; margin-left: 170px; margin-top: 20px; border-radius: 10px;" onclick="grade()">Grade</button>
+    <p id="result" style="font-size:30px; text-align: center;"></p>
+</div>
+
+
+    <script>
+    
+      
+    
+   function grade () {
+    var scores= scoreinput.value;
+    if (scores =="") {
+            result.innerText = "input an information❗❗"
+            result.style.color = "red"
+        } else if (scores <=39) {
+            result.innerText = "so pe o ti lo😢😭😭"
+            result.style.color = "red"
+        } else if (scores == 39 || scores <= 59) {
+            result.innerText = "Pass✔✔"
+            result.style.color = "green"
+        } else if (scores ==60 || scores <=100) {
+            result.innerText = "Awwn awwn you pass very very well ooooo🙈🙈🙈"
+            result.style.color = "yellow"
+        } else if (scores ==100 || scores <=1000   ) {
+            result.innerText = "error❗❗"
+            result.style.color = "red"
+        } else if (typeof scores == 'string') {
+            result.innerText = "What is wrong with you na input ur score na😞😞👿👿"
+            result.style.color = "black"
+        }  
+    }
+   
+  
+            
+             
+             
+
+    </script>
+    
+
+
+
+       
+      
+</body>
+</html>
